@@ -10,7 +10,7 @@ yeehaw = '1vM6RlrdwaMBD57SEXByU2'
 
 playlist = []
 
-tracklist = sp.playlist_items(test_playlist)
+tracklist = sp.playlist_items(yeehaw)
 for t in tracklist['items']:
     track = {}
     track['name'] = t['track']['name']
@@ -19,5 +19,5 @@ for t in tracklist['items']:
     track['added'] = t['added_at']
     playlist.append(track)
 
-with open("test_playlist.json", "w") as out_file:
+with open("yeehaw.json", "w") as out_file:
     json.dump(playlist, out_file, indent = 2)
