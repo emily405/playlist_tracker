@@ -1,0 +1,35 @@
+name: Python application
+
+on:
+  workflow_dispatch:
+  schedule: 
+    - cron: "55 16 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Update file
+      run: |
+        python playlist_tracker.py
+    - name: Commit back
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Automated update
+        
