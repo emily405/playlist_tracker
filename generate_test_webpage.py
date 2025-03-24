@@ -1,5 +1,6 @@
 from git import Repo
 import time
+import os
 
 repo = Repo('.')
 assert not repo.bare
@@ -21,5 +22,6 @@ last commit was on {t}
 </html>
 '''
 
-with open("test_webpage.html", "w") as html_file:
+os.makedirs('webpage', exist_ok=True)
+with open("webpage/test_webpage.html", "w") as html_file:
     html_file.write(filetext)
