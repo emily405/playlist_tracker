@@ -1,4 +1,4 @@
-name: Python application
+name: Yeehaw playlist tracker action
 
 on:
   workflow_dispatch:
