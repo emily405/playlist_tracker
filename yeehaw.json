@@ -24,14 +24,6 @@
     "added": "2025-01-23T05:10:04Z"
   },
   {
-    "name": "Simple Gifts",
-    "artists": [
-      "Jesse Welles"
-    ],
-    "id": "1lBmW6TkVlkdsNbg85Ot3G",
-    "added": "2025-03-08T23:26:26Z"
-  },
-  {
     "name": "I'm a Ramblin' Man",
     "artists": [
       "Waylon Jennings"
@@ -47,6 +39,14 @@
     ],
     "id": "4nCCC1DcyoRNaHBLLPG5sI",
     "added": "2025-01-23T04:47:22Z"
+  },
+  {
+    "name": "Bugs",
+    "artists": [
+      "Jesse Welles"
+    ],
+    "id": "2Fs3BXtegC7uLQy7ElpETE",
+    "added": "2025-05-13T13:40:53Z"
   },
   {
     "name": "The Giver",
@@ -144,6 +144,14 @@
     ],
     "id": "16aj4Y3ngJlxSpjXxcvnp4",
     "added": "2025-03-28T04:30:03Z"
+  },
+  {
+    "name": "Outlaw Country",
+    "artists": [
+      "Dylan Earl"
+    ],
+    "id": "7MFinyCtq8TPuFTHhZxsjH",
+    "added": "2025-05-13T13:40:39Z"
   },
   {
     "name": "I Think I'll Just Stay Here And Drink",
