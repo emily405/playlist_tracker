@@ -66,5 +66,5 @@ endstring = '''</body>
 html = html + endstring
 
 os.makedirs('webpage', exist_ok=True)
-with open("webpage/test_webpage.html", "w") as html_file:
+with open("webpage/index.html", "w") as html_file:
     html_file.write(html)
