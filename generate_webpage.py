@@ -29,6 +29,8 @@ html = '''<!doctype html>
 
 '''
 
+html = html + str(all_commits)
+
 
 for commit in all_commits[:-1]:
     f0 = json.load(commit.tree['yeehaw.json'].data_stream)
