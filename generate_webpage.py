@@ -31,10 +31,10 @@ html = '''<!doctype html>
 
 
 for commit in all_commits[:-1]:
-    f0 = json.load(commit.tree['test_playlist.json'].data_stream)
+    f0 = json.load(commit.tree['yeehaw.json'].data_stream)
     f0_date = commit.committed_datetime
     commit_prev = commit.parents[0]
-    f1 = json.load(commit_prev.tree['test_playlist.json'].data_stream)
+    f1 = json.load(commit_prev.tree['yeehaw.json'].data_stream)
     added_songs = [s for s in f0 if s not in f1]
     removed_songs = [s for s in f1 if s not in f0]
 
