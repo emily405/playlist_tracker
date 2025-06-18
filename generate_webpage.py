@@ -1,6 +1,7 @@
 from git import Repo
 import json
 import time
+import os
 
 repo = Repo('.')
 assert not repo.bare
@@ -64,5 +65,6 @@ endstring = '''</body>
 
 html = html + endstring
 
-with open("index.html", "w") as f:
-    f.write(html)
+os.makedirs('webpage', exist_ok=True)
+with open("webpage/playlist_tracker.html", "w") as html_file:
+    html_file.write(html)

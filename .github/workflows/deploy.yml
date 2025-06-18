@@ -30,7 +30,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Build page
         run: |
-          python generate_test_webpage.py
+          python generate_webpage.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
