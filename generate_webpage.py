@@ -6,9 +6,6 @@ import os
 repo = Repo('.')
 assert not repo.bare
 
-test_commits = list(repo.iter_commits("main", paths='test_playlist.json'))
-t_test = time.strftime("%a, %d %b %Y %H:%M", time.gmtime(test_commits[0].committed_date))
-
 all_commits = list(repo.iter_commits("main", paths='yeehaw.json'))
 t_yeehaw = time.strftime("%a, %d %b %Y %H:%M", time.gmtime(all_commits[0].committed_date))
 
@@ -33,11 +30,7 @@ html = '''<!doctype html>
 
 '''
 
-html = html + f'last test commit was on {t_test}'
-html = html + f'last yeehaw commit was on {t_yeehaw}'
-
-html = html + f'yeehaw commits={all_commits}'
-
+html = html + f'The most recent playlist update was on {t_yeehaw}'
 
 for commit in all_commits[:-1]:
     f0 = json.load(commit.tree['yeehaw.json'].data_stream)
