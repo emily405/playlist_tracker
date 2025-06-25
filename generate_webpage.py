@@ -3,7 +3,7 @@ import json
 import time
 import os
 
-repo = Repo('.')
+repo = Repo('')
 assert not repo.bare
 
 test_commits = list(repo.iter_commits("main", paths='test_playlist.json'))
