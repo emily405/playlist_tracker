@@ -14,7 +14,7 @@ html = '''<!doctype html>
 
 <head>
     <title>test playlist tracker</title>
-    <meta name="description" content="Tracking songs added and removed form the yeehaw playlist">
+    <meta name="description" content="Tracking songs added and removed from the yeehaw playlist">
     <meta name="keywords" content="yeehaw playlist spotify">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
