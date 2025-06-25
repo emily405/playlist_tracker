@@ -52,7 +52,7 @@ for commit in all_commits[:-1]:
     for removal in removed_songs:
         newrow = f'''<br>
         <span class="date">{f0_date}</span>
-        <span class="pm">+</span>
+        <span class="pm">-</span>
         <span class="song">{removal["name"]}</span>
         <iframe src="https://open.spotify.com/embed/track/{removal["id"]}" ></iframe> '''
 
