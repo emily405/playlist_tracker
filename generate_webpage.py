@@ -36,6 +36,8 @@ html = '''<!doctype html>
 html = html + f'last test commit was on {t_test}'
 html = html + f'last yeehaw commit was on {t_yeehaw}'
 
+html = html + f'yeehaw commits={all_commits}'
+
 
 for commit in all_commits[:-1]:
     f0 = json.load(commit.tree['yeehaw.json'].data_stream)
