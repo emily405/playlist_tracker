@@ -20,8 +20,8 @@ html = '''<!doctype html>
 <html>
 
 <head>
-    <title>test playlist tracker</title>
-    <meta name="description" content="Tracking songs added and removed from the yeehaw playlist">
+    <title>yeehaw playlist tracker</title>
+    <meta name="description" content="Tracking songs added and removed from `Hangman' Adam Page's yeehaw playlist">
     <meta name="keywords" content="yeehaw playlist spotify">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
@@ -30,10 +30,7 @@ html = '''<!doctype html>
 
 <body>
 
-    <h1>test playlist tracker</h1>
-
-    <a id="test_section"></a>
-    <h2>Test Section</h2>
+    <h1>yeehaw playlist tracker</h1>
 
 '''
 
