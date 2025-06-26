@@ -25,7 +25,7 @@ p{
 
 span.date {
     display: inline-block;
-    width: 50px;
+    width: 80px;
     height: 30px;
     padding: 5px;
     padding-left: 10px;
@@ -44,7 +44,7 @@ span.pm {
 
 span.song {
     display: inline-block;
-    width: 100px;
+    width: 150px;
     height: 30px;
     padding: 5px;
     /* border: 1px solid blue;  */
@@ -53,7 +53,7 @@ span.song {
 
   span.artist {
     display: inline-block;
-    width: 100px;
+    width: 150px;
     height: 30px;
     padding: 5px;
     /* border: 1px solid blue;  */

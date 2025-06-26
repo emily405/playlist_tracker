@@ -7,7 +7,7 @@ def artist_string(artist_list):
     artist_string = artist_list[0]
     if len(artist_list)>1:
         for n, artist in enumerate(artist_list[1:]):
-            artist_string = artist_string + f', {artist}'
+            artist_string = artist_string + f',<br>{artist}'
     return artist_string
 
 repo = Repo('.')
