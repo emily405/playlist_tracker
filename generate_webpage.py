@@ -34,7 +34,7 @@ html = '''<!doctype html>
 
 '''
 
-html = html + f'The most recent playlist update was on {t_yeehaw}'
+# html = html + f'The most recent playlist update was on {t_yeehaw}'
 
 for commit in all_commits[:-1]:
     f0 = json.load(commit.tree['yeehaw.json'].data_stream)
