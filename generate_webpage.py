@@ -41,7 +41,8 @@ for commit in all_commits[:-1]:
     removed_songs = [s for s in f1 if s not in f0]
 
     for addition in added_songs:
-        date = addition["added"].strftime('%d %b %Y')
+        # date = addition["added"].strftime('%d %b %Y')
+        date = f0_date.strftime('%d %b %Y')
         newrow = f'''<br>
         <span class="date">{date}</span>
         <span class="pm">+</span>
