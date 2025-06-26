@@ -51,6 +51,15 @@ span.song {
     vertical-align: top;
   }
 
+  span.artist {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    /* border: 1px solid blue;  */
+    vertical-align: top;
+  }
+
 
 iframe{
     display: inline-block;

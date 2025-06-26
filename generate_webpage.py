@@ -3,6 +3,13 @@ import json
 import time
 import os
 
+def artist_string(artist_list):
+    artist_string = artist_list[0]
+    if len(artist_list)>1:
+        for n, artist in enumerate(artist_list[1:]):
+            artist_string = artist_string + f', {artist}'
+    return artist_string
+
 repo = Repo('.')
 assert not repo.bare
 
@@ -47,6 +54,7 @@ for commit in all_commits[:-1]:
         <span class="date">{date}</span>
         <span class="pm">+</span>
         <span class="song">{addition["name"]}</span>
+        <span class="artist">{artist_string(addition['artists'])}</span>
         <iframe src="https://open.spotify.com/embed/track/{addition["id"]}" ></iframe> '''
 
         html = html + newrow
@@ -57,6 +65,7 @@ for commit in all_commits[:-1]:
         <span class="date">{date}</span>
         <span class="pm">-</span>
         <span class="song">{removal["name"]}</span>
+        <span class="artist">{artist_string(removal['artists'])}</span>
         <iframe src="https://open.spotify.com/embed/track/{removal["id"]}" ></iframe> '''
 
         html = html + newrow
