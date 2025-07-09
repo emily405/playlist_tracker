@@ -1,3 +1,4 @@
+
 * {
     font-family: "Dosis", sans-serif;
     /* max-width: 1000px; */
@@ -26,7 +27,7 @@ p{
 span.date {
     display: inline-block;
     width: 80px;
-    height: 30px;
+    min-height: 30px;
     padding: 5px;
     padding-left: 10px;
     /* border: 1px solid blue;  */
@@ -36,7 +37,7 @@ span.date {
 span.pm {
     display: inline-block;
     width: 20px;
-    height: 30px;
+    min-height: 30px;
     padding: 5px;
     /* border: 1px solid blue;  */
     vertical-align: top;
@@ -44,17 +45,17 @@ span.pm {
 
 span.song {
     display: inline-block;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    min-height: 30px;
     padding: 5px;
     /* border: 1px solid blue;  */
     vertical-align: top;
   }
 
-  span.artist {
+span.artist {
     display: inline-block;
-    width: 100px;
-    height: 30px;
+    width: 180px;
+    min-height: 30px;
     padding: 5px;
     /* border: 1px solid blue;  */
     vertical-align: top;
@@ -69,3 +70,25 @@ iframe{
     border: 1px solid rgba(0, 0, 255, 0); 
     vertical-align: top;
     }
+
+
+
+@media screen and (max-width: 480px) {
+    span.date {
+      width: 45px;
+      /* height: 40px; */
+    }
+    span.pm {
+      width: 5px;
+      /* height: 40px; */
+    }
+    span.song {
+      width: calc(0.4*(100vw - 55px));
+      /* height: 50px; */
+    }
+    span.artist {
+      width: calc(0.4*(100vw - 55px));
+      /* height: 50px; */
+    }
+}
+
